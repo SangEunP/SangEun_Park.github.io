@@ -7,10 +7,22 @@
   column-gap: 30px;
 }
 .grid-item {
-  background-color: rgba(131, 126, 126, 0.484);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(37, 193, 66, 0.924);
+  border: 1px solid rgba(78, 78, 78, 0.918);
   padding: 20px;
   font-size: 30px;
   text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 </style>
+
+h1{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
