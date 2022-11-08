@@ -1,53 +1,50 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang = "en">
 <head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>SangEun Park</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class = "max-width">
-            <div class="logo"><a href="#">SangEun<span>Park</span></a></div>
-            <ul class="menu">
+    <section>
+        <div class = "circle"></div>
+        <header>
+            <a href="#"><img src="logo.PNG"  class="logo"></a>
+            <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Education</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Education</a></li>
             </ul>
-            <div class = "menu-btn">
-                <i class ="fas fa-bars"></i>
+        </header>
+        <div class = "content">
+            <div class = "textBox">
+                <h2>Hello, nice to meet you. <br>I'm <span>SangEun Park</span></h2>
+                <p>Get to know me better with this website!</p>
+                <a href="#">Know More</a>
+            </div>
+            <div class = "imgBox">
+                <img src="img1.png" class = "me">
             </div>
         </div>
-    </nav>
-
-    <!-- home section -->
-    <section class="home" id="home">
-        <div class="max.width">
-            <div class="home-content">
-                <div class="text-1">Hello, I am</div>
-                <div class="text-2">SangEun Park</div>
-                <div class="text-3">You can also call me <span>Sanie</span></div>
-                <a href="#">Get to know Me</a>
-            </div>
-        </div>
+        <ul class = "thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('rgb(117, 117, 229)')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.PNG');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.PNG');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class = "sci">
+            <li><a href="#"><img src="linkedin.png"></a></li>
+        </ul>
     </section>
 
-    <!-- about me start-->
-    <section class="about" id="about">
-        <div class="max.width">
-            <div class="about-content">
-                <div class="column left">
-                    <img src="aboutme.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+    <script type = "text/javascript">
+        function imgSlider(anything){ 
+            document.querySelector('.me').src = anything;
+        }
+
+        function changeCircleColor(color){ 
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
 </body>
 </html>
