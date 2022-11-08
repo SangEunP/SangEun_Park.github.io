@@ -1,194 +1,161 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;500;600;700&display=swap');
-*{ 
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{ 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header
+{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hearder .logo
+{ 
+    position: relative;
+    max-width: 80px;
+}
+header ul
+{ 
+    position: relative;
+    display: flex;
+}
+header ul li
+{ 
+    list-style: none;
+}
+header ul li a
+{ 
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
     text-decoration: none;
 }
-.max-width{ 
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-/* navbar styling */
-.navbar{ 
-    position: fixed;
+.content
+{ 
+    position: relative;
     width: 100%;
-    padding: 30px 0;
-    /* background: rgb(37, 27, 184) */
-    font-family: 'Ubuntu', sans-serif;
-    transition: all 0.3s ease;
-}
-.navbar.sticky{ 
-    padding: 15px 0;
-    background:rgb(37, 27, 184);
-}
-.navbar .max-width{ 
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
-
-.navbar .logo a{ 
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+.content .textBox
+{ 
+    position: relative;
+    max-width: 600px;
 }
-.navbar .logo a span{
-    color: rgb(37, 27, 184);
-
- }
- .navbar.sticky .logo a span { 
+.content .textBox h2
+{ 
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span
+{ 
+    color: rgb(67, 67, 197);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p
+{ 
+    color: #333;
+}
+.content .textBox a
+{ 
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(67, 67, 197);
     color: #fff;
-    transition: all 0.3s ease;
- }
-.navbar .menu li{ 
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox
+{ 
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img
+{ 
+    max-width: 340px;
+}
+.thumb
+{ 
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li
+{ 
     list-style: none;
     display: inline-block;
-}
-.navbar .menu li a{ 
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{ 
-    color: rgb(37, 27, 184);
-}
-.navbar.sticky .menu li a:hover{ 
-    color: #fff;
-}
-/* menu btn styling */
-.menu-btn{ 
-    color:#fff;
-    font-size: 23px;
+    margin: 0 20px;
     cursor: pointer;
-    display: none;
+    transition: 0.5s;
 }
-/* home section */
-.home{ 
-    display: flex;
-    background: url("coverphoto.png") no-repeat right;
-    background-color:rgb(146, 161, 205);
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-/*if this is not working in phone, I will erase */
-@media screen and (max-width: 600px){
-    .home{
-        display:none;
-    }
-}
-
-.home .home-content{
-    margin-top: 300px;
-    margin-left: 100px;
+.thumb li:hover
+{
+    transform: translateY(-15px);
  }
-.home .home-content .text-1{
-    font-size: 27px;
+.thumb li img
+{
+    max-width: 60px;
+ }
+.sci
+{ 
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
+.sci li
+{ 
+    list-style: none;
 }
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{ 
-    color:rgb(37, 27, 184);
-    font-weight: 500;
-}
-.home .home-content a{ 
+.sci li a
+{ 
     display: inline-block;
-    background: rgb(37, 27, 184);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(37, 27, 184);
-    transition: all 0.3s ease;
+    margin: 5px 0;
+    transform: scale(0.6);
 }
-.home .home-content a:hover{ 
-    color: rgb(37, 27, 184);
-    background: none;
-}
-
-/*responsive media query*/
-@media (max-width: 1104px){ 
-    .home .max-width{ 
-        margin-left: 0px;
-    }
-}
-@media (max-width: 991px){ 
-    .max-width{ 
-        padding: 0 50px;
-    } 
-}
-@media (max-width: 947px){ 
-    .menu-btn{ 
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{ 
-        content: "\f00d";
-    }
-    .navbar .menu{ 
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: rgb(37, 27, 184);
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{ 
-        left: 0;
-    }
-    .navbar .menu li{ 
-        display: block;
-    }
-    .navbar .menu li a{ 
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text-2{ 
-        font-size: 70px;
-    }
-    .home .home-content .text-3{ 
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 690px){ 
-    .max-width{ 
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{ 
-        font-size: 60px;
-    }
-    .home .home-content .text-3{ 
-        font-size: 32px;
-    }
-    .home .home-content a{ 
-        font-size: 20px;
-        padding: 8px 20px;
-    }
-}
-@media (max-width: 500px){ 
-    .home .home-content .text-2{ 
-        font-size: 50px;
-    }
-    .home .home-content .text-3{ 
-        font-size: 27px;
-    }
+.circle
+{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(117, 117, 229);
+    clip-path: circle(600px at right 800px);
 }
