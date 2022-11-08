@@ -50,6 +50,10 @@ header ul li a
     margin-left: 40px;
     text-decoration: none;
 }
+header ul li a:hover
+{ 
+    color:rgb(67, 67, 197);
+}
 .content
 { 
     position: relative;
