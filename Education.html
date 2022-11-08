@@ -16,6 +16,43 @@
                 <li><a href="#">Education</a></li>
             </ul>
         </header>
-        <p>I  will write my education here.</p>
+        <div class = "content">
+            <div class = "textBox">
+                <img src="haagahelia.png" alt="Haaga-helia" style="float:left;"><br><br><br><br><br>
+                Haaga-helia University of Applied Science
+                (8.2022  - Now) <br>
+                Helsinki, Finland <br>
+                Program: Business Information Technology <br><br>
+                <img src="sungkyunkwan.png" alt="sungkyunkwan" style="float:left;"><br><br><br><br><br>
+                SungKyunKwan University
+                (3.2015  - 2.2020) <br>
+                Seoul, South Korea <br>
+                Program: Art and Modern Culture <br>
+            </div>
+            <div class = "imgBox">
+                <img src="img1.png" class = "me">
+            </div>
+        </div>
+        <ul class = "thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('rgb(117, 117, 229)')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.PNG');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class = "sci">
+            <li><a href="https://www.linkedin.com/in/sangeunpark-saniepark/"><img src="linkedin.png"></a></li>
+            <li><a href="mailto:sangeun6449@gmail.com"><img src="mail.jpeg"></a></li>
+        </ul>
     </section>
+
+    <script type = "text/javascript">
+        function imgSlider(anything){ 
+            document.querySelector('.me').src = anything;
+        }
+
+        function changeCircleColor(color){ 
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
 </body>
+</html>
