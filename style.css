@@ -28,10 +28,10 @@ header
     justify-content: space-between;
     align-items: center;
 }
-hearder .logo
+header .logo
 { 
     position: relative;
-    max-width: 80px;
+    max-width: 80vw;
 }
 header ul
 { 
@@ -167,3 +167,9 @@ header ul li a:hover
     background:rgb(117, 117, 229);
     clip-path: circle(60% at right 20%);
 }
+
+@media screen and (max-width: 800px) {
+    .circle, header .logo, header ul li a {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
