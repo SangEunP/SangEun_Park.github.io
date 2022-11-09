@@ -61,6 +61,7 @@ header ul li a:hover
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 .content .textBox
 { 
@@ -70,19 +71,20 @@ header ul li a:hover
 .content .textBox h2
 { 
     color: #333;
-    font-size: 3em;
+    font-size: 3vw;
     line-height: 1.4em;
     font-weight: 500;
 }
 .content .textBox h2 span
 { 
     color: rgb(67, 67, 197);
-    font-size: 1.2em;
+    font-size: 3vw;
     font-weight: 900;
 }
 .content .textBox p
 { 
     color: #333;
+    font-size: 1vw;
 }
 .content .textBox a
 { 
@@ -95,6 +97,7 @@ header ul li a:hover
     font-weight: 500;
     letter-spacing: 1px;
     text-decoration: none;
+    font-size: 1vw;
 }
 .content .imgBox
 { 
