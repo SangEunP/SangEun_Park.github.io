@@ -168,8 +168,8 @@ header ul li a:hover
     clip-path: circle(60% at right 20%);
 }
 
-@media screen and (max-width: 800px) {
-    .circle, header .logo, header ul li a {
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-    }
+@media only screen and (max-width: 768px) {
+    [class="textBox"] {
+        width: 100%;
+      }
   }
