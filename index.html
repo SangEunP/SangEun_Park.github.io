@@ -2,6 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SangEun Park</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,7 +10,7 @@
     <section>
         <div class = "circle"></div>
         <header>
-            <a href="#"><img src="logo.PNG"  class="logo"></a>
+            <a href="#"><img src="logo.PNG"  class="logo" style="max-width:100%;"></a>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -24,17 +25,17 @@
                 <a href="Education.html">What I have studied</a>
             </div>
             <div class = "imgBox">
-                <img src="img1.png" class = "me">
+                <img src="img1.png" class = "me" style="max-width:100%;">
             </div>
         </div>
         <ul class = "thumb">
-            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('rgb(117, 117, 229)')"></li>
-            <li><img src="thumb2.png" onclick="imgSlider('img2.PNG');changeCircleColor('#eb7495')"></li>
-            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('rgb(117, 117, 229)')" style="max-width:100%;"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.PNG');changeCircleColor('#eb7495')" style="max-width:100%;"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')" style="max-width:100%;"></li>
         </ul>
         <ul class = "sci">
-            <li><a href="https://www.linkedin.com/in/sangeunpark-saniepark/"><img src="linkedin.png"></a></li>
-            <li><a href="mailto:sangeun6449@gmail.com"><img src="mail.jpeg"></a></li>
+            <li><a href="https://www.linkedin.com/in/sangeunpark-saniepark/"><img src="linkedin.png" style="max-width:100%;"></a></li>
+            <li><a href="mailto:sangeun6449@gmail.com"><img src="mail.jpeg" style="max-width:100%;"></a></li>
         </ul>
     </section>
 
@@ -48,5 +49,8 @@
             circle.style.background = color;
         }
     </script>
+    <footer>
+        <p>copyright: SangEun Park 2022</p>
+    </footer>
 </body>
 </html>
